@@ -93,3 +93,47 @@ img {
 .button:hover {
   background-color: #6c8cff;
 }
+
+.img-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 1128px;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 48px;
+
+  li {
+    width: calc((100% - 48px) / 5);
+    height: 200px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    img {
+      display: block;
+      width: 100%;
+      /* height: 100%; */
+      /* object-fit: cover; */
+    }
+  }
+
+  li:hover {
+    transform: scale(1.044);
+  }
+}
+
+.description-wrap {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 5px;
+}
+.imgs-properties {
+  width: calc((100% - 15px) / 4);
+}
+.imgs-properties-name {
+}
+.imgs-properties-value {
+}
